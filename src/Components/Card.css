@@ -1,0 +1,76 @@
+.pagination_link{
+    text-decoration: none;
+    background-image: url("https://previews.123rf.com/images/sarahdesign/sarahdesign1506/sarahdesign150601932/41002082-next-button-icon.jpg");
+    padding: 8px 16px;
+    font-size:20px;
+}
+.pagination{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border:10px;
+    padding: 8px 16px;
+    color: rgb(0, 26, 255);
+    
+}
+.page{
+    
+padding: 8px 16px;
+border-radius:10px;
+font-size:20px;
+padding:15px;
+margin:5px;
+}
+#search:hover{
+    border-color: rgb(83, 133, 228);
+}
+#search{
+    margin-left: 100px;
+    border-radius: 10px;
+}
+#search::placeholder{
+    color: rgb(40, 104, 225);
+}
+.update-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.editform{
+    border-style:groove;
+    border-radius: 5px;
+    padding: 30px;
+    margin: auto;
+    
+
+}
+input.upost{
+    margin-top:10px;
+    padding-right:100px;
+}
+#update{
+    margin-top: 20px;
+
+}
+#update:hover{
+    background:darkblue;
+    border-color: darkblue;
+}
+.area{
+    margin-top: 10px;
+    padding-bottom: 70px;
+    padding-right: 100px;
+}
+.area::-webkit-textfield-decoration-container{
+    border-color: rgb(158, 158, 216);
+    border-width: 1px;
+}
+#postid{
+    font-family:Verdana,  Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

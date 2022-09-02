@@ -1,0 +1,38 @@
+ {
+               search?.filter((val)=>{
+                 if(search=='')
+                 {
+                   return val
+                 }
+                 else if(val.title.toLowerCase().includes(search.toLowerCase())){
+                  
+                 }
+               }).map((val,key)=>
+               {
+                return(
+                 <div className="col-md-3 animated fadeIn " key={key}>
+                <div className="card" style={{padding:'10px'}}> 
+                   <center><h5 className='card-title card-text p-3 mb-2 bg-danger text-white'>Post no.:- {val.id}</h5></center> 
+                   <div className="card-body"> 
+                     <div className="avatar"> 
+                       <img 
+                         src={val.thumbnailUrl}
+                         className="card-img-top"
+                         alt=""
+                       />
+                     </div> 
+                     <p className="card-text p-3 mb-2 bg-success text-white"> 
+                      <span></span>  
+                       <br /> 
+                       <h6 className="">Title:{val.title}</h6> 
+                     </p> 
+                   </div> 
+                   <div> 
+                      <center><button onClick={e=>{commentClick(e)}} className="btn btn-primary btn-sm" >Comments</button></center>  
+                   </div> 
+                 </div> 
+               </div> 
+                ) 
+               })
+            }
+      
